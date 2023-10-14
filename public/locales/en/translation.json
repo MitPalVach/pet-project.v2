@@ -3,11 +3,12 @@
 	"Перевод": "Translate",
 	"Главная страница": "Main page",
 	"Язык": "English",
-	"новый перевод": "новый перевод",
+	"новый перевод": "New translation",
 	"Страница не найдена": "Page not found",
-	"Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+	"Произошла непредвиденная ошибка": "An unexpected error occurred",
 	"Обновить страницу": "Reload page",
-	"throw error": "throw error",
+	"throw error": "Throw error",
 	"Главная": "Main",
-	"О сайте": "About us"
+	"О сайте": "About us",
+	"Переключить": "Toggle"
 }
