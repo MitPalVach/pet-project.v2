@@ -2,10 +2,10 @@ import webpack from 'webpack';
 import { buildCssLoader } from './loaders/buildCssLoader';
 import { BuildOptions } from './types/config';
 
-export function buildLoaders( { isDev }: BuildOptions ): webpack.RuleSetRule[] {
+export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
   const svgLoader = {
     test: /\.svg$/,
-    use: [ '@svgr/webpack' ],
+    use: ['@svgr/webpack'],
   };
 
   const babelLoader = {
@@ -14,12 +14,12 @@ export function buildLoaders( { isDev }: BuildOptions ): webpack.RuleSetRule[] {
     use: {
       loader: 'babel-loader',
       options: {
-        presets: [ '@babel/preset-env' ],
+        presets: ['@babel/preset-env'],
         plugins: [
           [
             'i18next-extract',
             {
-              locales: [ 'ru', 'en' ],
+              locales: ['ru', 'en'],
               keyAsDefaultValue: true,
             },
           ],
@@ -28,7 +28,7 @@ export function buildLoaders( { isDev }: BuildOptions ): webpack.RuleSetRule[] {
     },
   };
 
-  const cssLoader = buildCssLoader( isDev );
+  const cssLoader = buildCssLoader(isDev);
 
   // Если не используем тайпскрипт - нужен babel-loader
   const typescriptLoader = {

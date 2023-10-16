@@ -13,11 +13,11 @@ export default {
 } as ComponentMeta<typeof MainPage>;
 
 // @ts-ignore
-const Template: ComponentStory<typeof MainPage> = ( args ) => <MainPage { ...args } />;
+const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args} />;
 
-export const Normal = Template.bind( {} );
+export const Normal = Template.bind({});
 Normal.args = {};
 
-export const Dark = Template.bind( {} );
+export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ ThemeDecorator( Theme.DARK ) ];
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

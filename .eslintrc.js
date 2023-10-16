@@ -6,7 +6,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    // 'airbnb',
+    'airbnb',
     'plugin:i18next/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -24,10 +24,13 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
-    'react/jsx-indent': [ 2, 2 ],
-    'react/jsx-indent-props': [ 2, 2 ],
-    indent: [ 2, 2 ],
-    'react/jsx-filename-extension': [ 2, { extensions: [ '.js', '.jsx', '.tsx' ] } ],
+    quotes: ['error', 'single'],
+    semi: ['warn', 'always'],
+    'no-unreachable': 'warn',
+    'react/jsx-indent': [2, 2],
+    'react/jsx-indent-props': [2, 2],
+    indent: [2, 2],
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',
@@ -40,26 +43,27 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'no-tabs': 0,
-    'no-trailing-spaces': [ 'error', { skipBlankLines: true } ],
-    'max-len': [ 'error', { code: 120, ignoreComments: true } ],
+    'no-trailing-spaces': ['error', { skipBlankLines: true }],
+    'max-len': ['error', { code: 120, ignoreComments: true }],
     'i18next/no-literal-string': [
       'error',
       {
         markupOnly: true,
-        ignoreAttribute: [ 'data-testid', 'to' ],
+        ignoreAttribute: ['data-testid', 'to'],
       },
     ],
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
+    'no-param-reassign': 'off',
   },
   globals: {
     __IS_DEV__: true,
   },
   overrides: [
     {
-      files: [ '**/src/**/*.{test,stories}.{ts,tsx}' ],
+      files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
       rules: {
         'i18next/no-literal-string': 'off',
         'max-len': 'off',

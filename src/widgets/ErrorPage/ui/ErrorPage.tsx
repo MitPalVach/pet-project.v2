@@ -7,7 +7,7 @@ interface ErrorPageProps {
 	className?: string;
 }
 
-export const ErrorPage = ( { className }: ErrorPageProps ) => {
+export const ErrorPage = ({ className }: ErrorPageProps) => {
   const { t } = useTranslation();
 
   const reloadPage = () => {
@@ -16,10 +16,10 @@ export const ErrorPage = ( { className }: ErrorPageProps ) => {
   };
 
   return (
-    <div className={ classNames( cls.ErrorPage, {}, [ className ] ) }>
-      <p>{ t( 'Произошла непредвиденная ошибка' ) }</p>
-      <Button onClick={ reloadPage }>
-        { t( 'Обновить страницу' ) }
+    <div className={classNames(cls.ErrorPage, {}, [className])}>
+      <p>{ t('Произошла непредвиденная ошибка') }</p>
+      <Button onClick={reloadPage}>
+        { t('Обновить страницу') }
       </Button>
     </div>
   );
