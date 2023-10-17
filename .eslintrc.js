@@ -57,6 +57,8 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     'no-param-reassign': 'off',
+    'react/jsx-curly-spacing': [2, { when: 'always' }],
+    'space-in-parens': ['error', 'always'],
   },
   globals: {
     __IS_DEV__: true,

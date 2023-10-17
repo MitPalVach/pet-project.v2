@@ -6,31 +6,31 @@ import { getCounterValue } from '../model/selectors/getCounterValue/getCounterVa
 
 export const Counter = () => {
   const dispatch = useDispatch();
-  const counterValue = useSelector(getCounterValue);
+  const counterValue = useSelector( getCounterValue );
   const { t } = useTranslation();
 
   const increment = () => {
-    dispatch(counterActions.increment());
+    dispatch( counterActions.increment() );
   };
 
   const decrement = () => {
-    dispatch(counterActions.decrement());
+    dispatch( counterActions.decrement() );
   };
 
   return (
     <div>
       <h1 data-testid="value-title">{ counterValue }</h1>
       <Button
-        onClick={increment}
+        onClick={ increment }
         data-testid="increment-btn"
       >
-        { t('increment') }
+        { t( 'increment' ) }
       </Button>
       <Button
         data-testid="decrement-btn"
-        onClick={decrement}
+        onClick={ decrement }
       >
-        { t('decrement') }
+        { t( 'decrement' ) }
       </Button>
     </div>
   );

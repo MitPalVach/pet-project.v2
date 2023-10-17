@@ -8,7 +8,7 @@ const MainPage = () => {
   return (
     <div>
       <Counter />
-      { t('Главная страница') }
+      { t( 'Главная страница' ) }
     </div>
   );
 };

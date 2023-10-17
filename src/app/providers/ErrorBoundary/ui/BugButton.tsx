@@ -4,22 +4,22 @@ import { useTranslation } from 'react-i18next';
 
 // Компонент для тестирования ErrorBoundary
 export const BugButton = () => {
-  const [error, setError] = useState(false);
+  const [error, setError] = useState( false );
   const { t } = useTranslation();
 
-  const onThrow = () => setError(true);
+  const onThrow = () => setError( true );
 
-  useEffect(() => {
-    if (error) {
+  useEffect( () => {
+    if ( error ) {
       throw new Error();
     }
-  }, [error]);
+  }, [error] );
 
   return (
     <Button
-      onClick={onThrow}
+      onClick={ onThrow }
     >
-      { t('throw error') }
+      { t( 'throw error' ) }
     </Button>
   );
 };

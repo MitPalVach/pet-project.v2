@@ -23,7 +23,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	size?: ButtonSize;
 }
 
-export const Button: FC<ButtonProps> = (props) => {
+export const Button: FC<ButtonProps> = ( props ) => {
   const {
     className,
     children,
@@ -42,8 +42,8 @@ export const Button: FC<ButtonProps> = (props) => {
   return (
     <button
       type="button"
-      className={classNames(cls.Button, mods, [className])}
-      {...otherProps}
+      className={ classNames( cls.Button, mods, [className] ) }
+      { ...otherProps }
     >
       { children }
     </button>
