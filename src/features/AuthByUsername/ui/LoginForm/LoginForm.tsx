@@ -12,7 +12,7 @@ export const LoginForm = ( { className }: LoginFormProps ) => {
   const { t } = useTranslation();
 
   return (
-    <div className={ classNames( cls.LoginForm, {}, [className] ) }>
+    <div className={ classNames( cls.LoginForm, {}, [ className ] ) }>
       <Input
         autofocus
         type="text"

@@ -24,13 +24,13 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
-    quotes: ['error', 'single'],
-    semi: ['warn', 'always'],
+    quotes: [ 'error', 'single' ],
+    semi: [ 'warn', 'always' ],
     'no-unreachable': 'warn',
-    'react/jsx-indent': [2, 2],
-    'react/jsx-indent-props': [2, 2],
-    indent: [2, 2],
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
+    'react/jsx-indent': [ 2, 2 ],
+    'react/jsx-indent-props': [ 2, 2 ],
+    indent: [ 2, 2 ],
+    'react/jsx-filename-extension': [ 2, { extensions: [ '.js', '.jsx', '.tsx' ] } ],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'warn',
@@ -43,13 +43,13 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'no-tabs': 0,
-    'no-trailing-spaces': ['error', { skipBlankLines: true }],
-    'max-len': ['error', { code: 120, ignoreComments: true }],
+    'no-trailing-spaces': [ 'error', { skipBlankLines: true } ],
+    'max-len': [ 'error', { code: 120, ignoreComments: true } ],
     'i18next/no-literal-string': [
       'error',
       {
         markupOnly: true,
-        ignoreAttribute: ['data-testid', 'to'],
+        ignoreAttribute: [ 'data-testid', 'to' ],
       },
     ],
     'jsx-a11y/no-static-element-interactions': 'off',
@@ -57,15 +57,16 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     'no-param-reassign': 'off',
-    'react/jsx-curly-spacing': [2, { when: 'always' }],
-    'space-in-parens': ['error', 'always'],
+    'react/jsx-curly-spacing': [ 2, { when: 'always' } ],
+    'space-in-parens': [ 'error', 'always' ],
+    'array-bracket-spacing': [ 'error', 'always' ],
   },
   globals: {
     __IS_DEV__: true,
   },
   overrides: [
     {
-      files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+      files: [ '**/src/**/*.{test,stories}.{ts,tsx}' ],
       rules: {
         'i18next/no-literal-string': 'off',
         'max-len': 'off',
