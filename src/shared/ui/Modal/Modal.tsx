@@ -85,6 +85,7 @@ export const Modal = ( props: ModalProps ) => {
           <div className={ cls.content } onClick={ onContentClick }>
             { children }
           </div>
+
         </div>
       </div>
     </Portal>
