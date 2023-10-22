@@ -60,9 +60,11 @@ module.exports = {
     'react/jsx-curly-spacing': [ 2, { when: 'always' } ],
     'space-in-parens': [ 'error', 'always' ],
     'array-bracket-spacing': [ 'error', 'always' ],
+    'no-undef': 'off',
   },
   globals: {
     __IS_DEV__: true,
+    __API__: true,
   },
   overrides: [
     {
