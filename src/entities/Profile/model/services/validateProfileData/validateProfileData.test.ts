@@ -5,11 +5,11 @@ import { validateProfileData } from './validateProfileData';
 
 const data = {
   username: 'admin',
-  age: 22,
-  country: Country.Ukraine,
-  lastname: 'ulbi tv',
-  first: 'asd',
-  city: 'asf',
+  age: 37,
+  country: Country.Armenia,
+  lastname: 'VV',
+  first: 'Dmitriy',
+  city: 'Yerevan',
   currency: Currency.USD,
 };
 
